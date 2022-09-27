@@ -1,0 +1,10 @@
+\babel@toc {norsk}{}\relax 
+\contentsline {section}{\numberline {1}Oppgave 1}{3}{section.1}%
+\contentsline {section}{\numberline {2}Oppgave 2}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Finn sannsynligheten for at et klasserom har høyere CO2-konsentrasjon enn 1020 ppm.}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Du får vite at 6\% av klasserommene har høyere CO2-konsentrasjon enn x ppm. Bestem x.}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Hvor stor sannsynlighet er det for at minst tre av ti tilfeldig valgte klasserom har høyere CO2-konsentrasjon enn 1020 ppm?}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Oppgave 3}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Finn sannsynligheten for at en maskinkomponent har levetid på over to år.}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Hvor stor er sannsynligheten for at den fungerer i minst to år til dersom den allerede har fungert i ett år?}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Ved hjelp av sentralgrenseteoremet finn den tilnærmede sannsynligheten for at den gjennomsnittlige levetiden for 30 uavhengige komponenter av denne typ en er minst to år.}{7}{subsection.3.3}%

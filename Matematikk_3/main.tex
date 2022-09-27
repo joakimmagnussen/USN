@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%% {
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.15in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+%%%%%%%%%%%%%%%%%%%%%%%% CHANGE HERE %%%%%%%%%%%%%%%%%%%% {
+\newcommand\course{VE 3020}
+\newcommand\semester{Autum 2022}
+\newcommand\hwnumber{}                 % <-- ASSIGNMENT #
+\newcommand\NetIDa{}           % <-- YOUR NAME
+\newcommand\NetIDb{}           % <-- STUDENT ID #
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%% {
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDa}
+\lhead{\NetIDa\\\NetIDb}
+\chead{\textbf{\Large Summary of the syllabus \hwnumber}}
+\rhead{\course \\ \semester}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+\begin{document}
+
+\section*{1.1 Propositional Logic}
+
+A proposition is a declarative sentence (that is, a sentence that declares a fact) that is either true or false, but not both.
+
+\textbf{Definition 1:} Let $p$ be a proposition. The \textbf{\textit{negation}} of $p$, denoted by $\neg p$ (also denoted by $\bar{p}$), is the statement:
+
+\textbf{"It is not the case that \textit{p}".} The proposition $\neg p$ is read \textbf{"not \textit{p}"}.
+
+\textbf{Definition 2:} Let $p$ and $q$ be propositions. The \textbf{\textit{conjunction}} of $p$ and $q$, denoted by  $p \wedge q$, is the proposition ``$p$ and $q$''. The conjunction $p \wedge q$ is true when both $p$ and $q$ are true and is false otherwise.
+
+\textbf{Definition 3:} Let $p$ and $q$ be propositions. The \textbf{\textit{disjunction}} of $p$ and $q$, denoted by $p \vee q$, is the proposition ``$p$ or $q$''. The disjunction $p \vee q$ is false when both $p$ and $q$ are false and is true otherwise.
+
+\textbf{Definition 4:} Let $p$ and $q$ be propositions. The \textbf{\textit{exclusive}} or of $p$ and $q$, denoted by ...., is the proposition that is true when exactly one of $p$ and $q$ is true and is false otherwise.
+
+\textbf{Definition 5:} Let $p$ and $q$ be propositions. The \textbf{\textit{conditional statement}} $p \rightarrow q$ is the proposition ``if $p$, then $q$.'' The conditional statement $p \rightarrow q$ is false when $p$ is true and $q$ is false, and true otherwise. In the conditional statement $p \rightarrow q$, $p$ is called the \textbf{\textit{hypothesis}} and $q$ is called the \textbf{\textit{conclusion}}.
+
+\textbf{Definition 6:} Let $p$ and $q$ be propositions. The \textbf{\textit{biconditional statement}} $p \leftrightarrow q$ is the proposition ``$p$ if and only if $q$''. The biconditional statement $p \leftrightarrow q$ is true when $p$ and $q$ have the same truth values, and is false otherwise. Biconditional statements are also called \textbf{\textit{bi-implications}}.
+
+\textbf{Definition 7:} A \textbf{\textit{bit string}} is a sequence of zero or more bits. The \textbf{\textit{length}} of this string is the number of bits in the string.
+
+
+\section*{1.3 Propositional Equivalences}
+
+\textbf{Definition 1:} A compound proposition that is always true, no matter what the truth values of the propositional variables that occur in it, is called a \textbf{\textit{tautology}}. A compound proposition that is always false is called a \textbf{\textit{contradiction}}. A compound proposition that is neither a tautology nor a contradiction is called a \textbf{\textit{contigency}}.
+
+\textbf{Example:}
+We can construct examples of
+
+\textbf{Definition 2:}
+
+Showing that $\neg (p \rightarrow q)$ and  $p \wedge \neg q$ are logically equivalent.
+\begin{align*}
+   \neg (p \rightarrow q)   & \equiv \neg ( \neg p \vee q ) \\ % \\ makes a new line
+                            & \equiv \neg ( \neg p \vee q ) \\
+                            & \equiv \neg ( \neg p ) \wedge \neg ( q ) \\
+                            & \equiv p \wedge \neg q
+\end{align*}
+
+
+
+
+\section*{1.4 Predicates and Quantifiers}
+
+
+
+\section*{1.6 Rules of Inference}
+
+
+
+\section*{1.7 Introduction to Proofs}
+
+
+
+
+Note that $\&$ is where the equations align.
+
+\section*{Example Problem 3}
+
+Constructing the \emph{Truth Table} of $(p \rightarrow q) \wedge (\neg p \leftrightarrow q)$ in Table \ref{tb_truth_table}:
+
+\begin{table}[h]    % [h] means to print the table here
+\caption{Caption here. Leave it blank if you will not refer it.}
+\label{tb_truth_table}
+    \centering  % to center the table https://www.overleaf.com/project/5d757e7e591aa30001b65c17
+    \begin{tabular}{cc|c|cc|c} % one 'c' for each column. It means centered. You can use 'l' or 'r' for left and right, respectively. '|' prints a line
+
+        $p$ &   $q$ &   $\neg p$    &   $p \rightarrow q$  &   $\neg p \leftrightarrow q$  &   $(p \rightarrow q) \wedge (\neg p \leftrightarrow q)$ \\ \hline
+        T   &   T   &   F           &   T                   &   F                           &   F   \\
+        T   &   F   &   F           &   F                   &   T                           &   F   \\
+        F   &   T   &   T           &   T                   &   T                           &   T   \\
+        F   &   F   &   T           &   T                   &   F                           &   F
+    \end{tabular}
+\end{table}
+
+
+\section*{Example Problem 4}
+% If the Problem is divided into items, use "enumerate"
+\begin{enumerate}[a)]
+    \item
+    ``There is a student in Gryffindor who has taken all elective classes.''
+    Solution:
+        \begin{align*}
+            \exists x \forall y \forall z ( H(x, \text{Gryffindor}) \wedge P(x,y) )
+        \end{align*}
+    where
+    \begin{itemize}
+        \item[] $H(x,z)$ is ``$x$ is of $z$ house''
+        \item[] $P(x, y)$ is ``$x$ has taken $y$,''
+        \item[] the domain for $x$ consists of all students in Hogwarts
+        \item[] the domain for $y$ consists of all elective classes,
+        \item[] and the domain for $z$ consists of all Hogwarts houses.
+    \end{itemize}
+
+    \item
+    Give a direct proof of the theorem ``If $n$ is an odd integer, then $n^2$ is odd.''
+
+    Solution:
+    \begin{enumerate}[1.]
+        \item
+        \begin{align*}
+            \forall n(P(n) \rightarrow Q(n)),
+        \end{align*}
+       where
+       \begin{itemize}
+            \item[] $P(n)$ is ``$n$ is an odd integer'' and
+            \item[] $Q(n)$ is ``$n^2$ is odd.''
+       \end{itemize}
+
+        \item
+        Assume $P(n)$  is true.
+
+        \item
+        By definition, an odd integer is $n = 2k + 1$,
+        where $k$ is some integer.
+
+        \item
+        \begin{align*}
+            n^2 &= (2k + 1)^2 \\
+                &= 4k^2 + 4k + 1 \\
+                &=  2(2k^2 + 2k) + 1
+        \end{align*}
+
+        \item
+        $\therefore n^2$ is an odd integer. $\qed$
+    \end{enumerate}
+
+
+
+    \item Let $A = \{1,2,3\}$ and $B = \{1,2,3,\{1,2,3\}\}$:
+
+    Then, $A \in B$ and $A \subseteq B$.
+
+    \item Let $A = \{1, 3, 5\}$, $B = \{1,2,3,\}$, and universe $U = \{1,2,3,4,5\}$:
+    \begin{align*}
+        A \cup B    &= \{1,2,3,5\}, \\
+        A \cap B    &= \{1,3\}, \\
+        A - B       &= \{5\},\\
+        \bar{A}     &= \{2,4\},\\
+        A - A       &= \emptyset .
+    \end{align*}
+
+\end{enumerate}
+
+\end{document}
